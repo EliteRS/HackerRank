@@ -1,0 +1,51 @@
+#include <stdio.h>
+int main (){
+	
+	
+	int a[3]={17,28,30};
+	int b[3]={99,16,8};
+	
+	int bc=0;
+	int ac=0;
+	int i;
+	int resultA;
+	int resultB=0;
+	
+	for (i=0;i<3;i++){
+		
+		if(a[i]<b[i]){
+			bc++;
+			
+		}else if(a[i]>b[i]){
+			ac++;
+			
+		}else if(a[i]==b[i]){
+			continue;
+		}
+	}
+	printf ("%d %d",ac,bc);
+	
+	
+	
+}
+// java
+//static List<Integer> compareTriplets(List<Integer> a, List<Integer> b) {
+//        int i;
+//        int bc=0;
+//        int ac=0;
+//        List<Integer> result = new ArrayList<>();
+//        for (i=0;i<3;i++){
+//            if(a.get(i)<b.get(i)){
+//                bc++;
+//                continue;
+//            }else if(a.get(i)>b.get(i)){
+//                ac++;
+//                continue;
+//            }else if(a.get(i)==b.get(i)){
+//                continue;
+//          }
+//        }
+//        result.add(ac);
+//        result.add(bc);
+//        return result;
+//    }
